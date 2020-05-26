@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #ebced0;">
+
+    <header class="container-fluid">
+        <h1 class="display-3 p-3">SPACE</h1>
+    </header>
+
+    <section class="container">
+        <row class="row">
+            <dov class="col-lg">
+                <h2 class="display-4 p-2" id="Text">Move your mouse over the picture..</h2>
+            </dov>
+        </row>
+        <row class="row">
+            <div class="col-lg">
+                <img src="p/Picture.jpg" usemap="#Pic_map" alt="Picture"width="1116" height="590"  id="Pic">
+                <map name="Pic_map" onmouseout="Message('Discover more..')">
+                    <area shape="rect" coords="383,324,943,560" href="#" data-toggle="modal" data-target="#m-keybord" alt="Keybord" title="Keybord"  onmouseover="Message('keybord')"> 
+                    <area shape="rect" coords="829,0,1086,286" href="#" data-toggle="modal" data-target="#m-book" alt="Book" title="Book" onmouseover="Message('Book')">
+                    <area shape="rect" coords="786,30,807,286" href="#" data-toggle="modal" data-target="#m-pen" alt="Pen" title="Pen" onmouseover="Message('Pen')">
+                    <area shape="circle" coords="175,390,165" href="#" data-toggle="modal" data-target="#m-headphones" alt="Headphones" title="Headphones" onmouseover="Message('Headphones')">
+                    <area shape="rect" coords="975,342,1083,560" href="#" data-toggle="modal" data-target="#m-mouse" alt="Mouse" title="Mouse" onmouseover="Message('Mouse')"> 
+                </map>
+            </div>
+        </row>
+    </section>
+    <footer div="container-fluid">
+        <p class="text-center p-5"> &#169; 2020 YapacDev. All Rights Reserved.</p>
+   </footer>
+    <!--Modals -->
+    <div class="modal fade" id="m-keybord">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Keybord!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          A normal QWERTY keybord..
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="m-book">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Book!</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              Just a book for your daily notes..
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="m-pen">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Pen!</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                    A pen ,works with the book?..
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+    </div>
+    <div class="modal fade" id="m-headphones">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Headphones!</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              Music is love..
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="m-mouse">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Mouse!</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              An apple expensive mouse hehe..
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+    </div>
+    <!--Scripts-->
+    <script>
+        function Message(params) {
+            let Text = document.getElementById("Text");
+            Text.textContent=params;
+        }
+    </script>
+</body>
+</html>
